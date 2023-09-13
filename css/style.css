@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-btnBlueColor:#4f46e5;
+    --main-colorWhite:#fff;
+    --main-colorBlack:#000;
+}
+
+/* Basic layout setup */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.blueBtn{
+    background-color: var(--main-btnBlueColor);
+    color: var(--main-colorWhite);
+    border: none;
+    width: 90%;
+    height: 30px;
+    font-size: large;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+/* Header styles */
+.sidebar header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sidebar header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Navigation styles */
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+/* Footer styles */
+.sidebar footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+    background-color: #222;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Projects */
+#projects {
+    /* background-color: rgb(255, 180, 180); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: calc(30.33% - 20px); /* 33.33% width for three cards in a row with spacing */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+    cursor: pointer;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+    z-index: 1;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    width: 100%;
+    height: 180px;
+}
+
+.project-item h3 {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.project-item p {
+    font-size: large;
+    font-weight: 400;
+    margin: 15px;
+}
+.project-item button{
+    margin-top: auto;
+}
