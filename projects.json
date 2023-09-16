@@ -1,0 +1,30 @@
+[{
+    "title": "Background ",
+    "techUsed": "Oil painting",
+    "description": "A beautiful sunset over the ocean, painted in oil.",
+    "imageUrl": "../images/background.jpeg",
+    "tags":["Ml project","team project"]
+  },
+  {
+    "title": "Projectsss 2",
+    "techUsed": "dame",
+    "description": "A painted in oil.",
+    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "tags":["Web d","team project"]
+  },
+  {
+    "title": "A beautiful sunset over the ocean, painted in oil",
+    "techUsed": "python, react,machine learning ,cpp, python visualization",
+    "description": "A painted in oil.A beautiful sunset over the ocean, painted in oil.A beautiful sunset over the ocean, painted in oil",
+    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "tags":["Ml project","team project"]
+  },
+  {
+    "title": "A beautiful sunset over the ocean, painted in oil",
+    "techUsed": "python, react,machine learning ,cpp, python visualization",
+    "description": "A painted in oil.A beautiful sunset over the ocean, painted in oil.A beautiful sunset over the ocean, painted in oil",
+    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "tags":["Ml project","team project"]
+  }
+
+]

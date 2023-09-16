@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <style>
+        /* Basic CSS styles for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4f46e5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3932a1;
+        }
+    </style>
+</head>
+<body>
+    <form id="projectForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="urlimage">Image URL:</label>
+        <input type="text" id="urlimage" name="urlimage" required><br><br>
+
+        <label for="techused">Tech Used:</label>
+        <input type="text" id="techused" name="techused" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projectForm = document.getElementById("projectForm");
+
+            projectForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Get form data
+                const formData = new FormData(projectForm);
+                const projectData = {};
+
+                formData.forEach((value, key) => {
+                    projectData[key] = value;
+                });
+
+                // Save project data to a JSON file (in local storage)
+                saveProjectData(projectData);
+
+                // Clear the form
+                projectForm.reset();
+            });
+
+            function saveProjectData(data) {
+                // Load existing data from JSON file (in local storage)
+                let existingData = [];
+                try {
+                    const storedData = localStorage.getItem("projectData");
+                    if (storedData) {
+                        existingData = JSON.parse(storedData);
+                    }
+                } catch (error) {
+                    console.error("Error loading existing data:", error);
+                }
+
+                // Add new data to the existing array
+                existingData.push(data);
+
+                // Save the updated data back to the JSON file (in local storage)
+                try {
+                    localStorage.setItem("projectData", JSON.stringify(existingData));
+                    alert("Project data added successfully!");
+                } catch (error) {
+                    console.error("Error saving data:", error);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

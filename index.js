@@ -38,75 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.send();
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Get all the "Read More" buttons
-//     const readMoreButtons = document.querySelectorAll(".read-more-btn");
-
-//     // Add a click event listener to each "Read More" button
-//     readMoreButtons.forEach((button) => {
-//         button.addEventListener("click", function () {
-//             // Toggle the visibility of the project description
-//             const projectCard = this.parentElement;
-//             const projectDescription = projectCard.querySelector(".project-description");
-
-//             // Check if the description is hidden
-//             if (projectDescription.style.display === "none" || projectDescription.style.display === "") {
-//                 projectDescription.style.display = "block";
-//                 this.style.display = "none"; // Hide "Read More" button
-//                 projectCard.querySelector(".read-less-btn").style.display = "inline"; // Show "Read Less" button
-//             }
-//         });
-//     });
-
-//     // Get all the "Read Less" buttons
-//     const readLessButtons = document.querySelectorAll(".read-less-btn");
-
-//     // Add a click event listener to each "Read Less" button
-//     readLessButtons.forEach((button) => {
-//         button.addEventListener("click", function () {
-//             // Toggle the visibility of the project description
-//             const projectCard = this.parentElement;
-//             const projectDescription = projectCard.querySelector(".project-description");
-
-//             // Check if the description is visible
-//             if (projectDescription.style.display === "block") {
-//                 projectDescription.style.display = "none";
-//                 this.style.display = "none"; // Hide "Read Less" button
-//                 projectCard.querySelector(".read-more-btn").style.display = "inline"; // Show "Read More" button
-//             }
-//         });
-//     });
-
-//     // Get all project images for hover effect
-//     const projectImages = document.querySelectorAll(".project-image");
-
-//     // Add a mouseover event listener to each project image
-//     projectImages.forEach((image) => {
-//         // Create a GitHub icon and link
-//         const githubIcon = document.createElement("a");
-//         githubIcon.href = "#"; // Replace with your GitHub project URL
-//         githubIcon.target = "_blank";
-//         githubIcon.className = "github-icon";
-        
-//         // Create an image element for the GitHub icon
-//         const githubImage = document.createElement("img");
-//         githubImage.src = "github-icon.png"; // Replace with your GitHub icon image URL
-//         githubImage.alt = "GitHub Icon";
-
-//         // Append the GitHub icon image to the GitHub icon link
-//         githubIcon.appendChild(githubImage);
-
-//         // Add the GitHub icon to the project image on hover
-//         image.addEventListener("mouseover", function () {
-//             this.appendChild(githubIcon);
-//         });
-
-//         // Remove the GitHub icon on mouseout
-//         image.addEventListener("mouseout", function () {
-//             this.removeChild(githubIcon);
-//         });
-//     });
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
     // Get all project cards
@@ -121,17 +52,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-// ##################################### Project Dynmacially added J###############
+// ##################################### Project Dynamically added ###############
 document.addEventListener("DOMContentLoaded", function () {
     const projectsSection = document.getElementById("projects");
+    const searchInput = document.getElementById("searchInput");
+    const viewAllTagsButton = document.getElementById("viewAllTags");
+
+    let projectsData = []; // To store the original project data
 
     // Function to fetch and display all projects from projects.json
     function displayAllProjects() {
         fetch('projects.json')
             .then(response => response.json())
             .then(data => {
+                projectsData = data; // Store the original project data
                 data.forEach(project => {
                     displayProject(project);
                 });
@@ -144,14 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Display all existing projects when the page loads
     displayAllProjects();
 
-
     // Function to display a project
     function displayProject(project) {
         const projectItem = document.createElement("div");
         projectItem.classList.add("project-item");
 
+        // Create a string containing all the tags
+        const tagsString = project.tags.join(', ');
+
         projectItem.innerHTML = `
-        <img src="${project.imageUrl}" alt="${project.title}">
+            <img src="${project.imageUrl}" alt="${project.title}">
             <h3>${project.title}</h3>
             <p>${project.techUsed}</p>
             <p>${project.description}</p>
@@ -161,4 +97,136 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add the new project to the projects section
         projectsSection.appendChild(projectItem);
     }
+
+    // Event listener for the search input
+    searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        // Filter projects based on the search term
+        const filteredProjects = projectsData.filter(project => {
+            return (
+                project.title.toLowerCase().includes(searchTerm) ||
+                project.techUsed.toLowerCase().includes(searchTerm) ||
+                project.description.toLowerCase().includes(searchTerm) ||
+                project.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+            );
+        });
+
+        // Clear the projects section and display the filtered projects
+        projectsSection.innerHTML = "";
+        filteredProjects.forEach(project => {
+            displayProject(project);
+        });
+    });
+
+  // Event listener for the "View All Tags" button
+viewAllTagsButton.addEventListener("click", function () {
+    // Clear the search input
+    searchInput.value = "";
+
+    // Create a div element
+    const tagsItems = document.createElement("div");
+    const ul = document.createElement("ul");
+
+    // Fetch data from projects.json
+    fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+            // Collect all tags into a single array
+            const allTags = [];
+            data.forEach(project => {
+                project.tags.forEach(tag => {
+                    allTags.push(tag);
+                });
+            });
+
+            // Sort tags alphabetically
+            allTags.sort();
+
+            // Remove duplicates by converting the array to a Set and back to an array
+            const uniqueTags = [...new Set(allTags)];
+
+            // Iterate through the unique, sorted tags
+            uniqueTags.forEach(tag => {
+                const li = document.createElement("li");
+                li.textContent = tag;
+                ul.appendChild(li);
+            });
+
+            // Append the unordered list to the div
+            tagsItems.appendChild(ul);
+
+            // Append the div to a specific element in your HTML (e.g., replace 'document.body' with your desired target element)
+            // For example, if you have a 'tagsContainer' element in your HTML, you can do:
+            // const tagsContainer = document.getElementById("tagsContainer");
+            // tagsContainer.appendChild(tagsItems);
+            // Or you can append it to the document body if that's your intention:
+            document.body.appendChild(tagsItems);
+        })
+        .catch(error => {
+            console.error('Error fetching projects:', error);
+        });
+});
+
+// Append the div to the document (or any other element where you want to display it)
+document.body.appendChild(tagsItems);
+
+
+        // Display all projects
+        projectsSection.innerHTML = "";
+        projectsData.forEach(project => {
+            displayProject(project);
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineList = document.getElementById("timeline-list");
+
+    // Function to fetch and display timeline data from a JSON file
+    function displayTimelineData() {
+        fetch('timeline-data.json') // Replace with the path to your JSON file
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(timelineItem => {
+                    const timelineItemElement = document.createElement("li");
+                    timelineItemElement.innerHTML = `
+                    <div class="timeline-content">
+                    <div class="heading-tag">
+                    <h3 class="date">${timelineItem.date}</h3>
+                    <span style="background-color: ${timelineItem.color}">${timelineItem.tag}</span>
+                    </div>
+                    <p>${timelineItem.description}</p>
+                    <button class="btn"> Check it out </button>
+                </div>
+                    `;
+                    timelineList.appendChild(timelineItemElement);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching timeline data:', error);
+            });
+    }
+
+    // Call the function to display timeline data
+    displayTimelineData();
 });
