@@ -10,7 +10,7 @@
 }
 a{
   text-decoration: none;
-  color: var(--main-colorWhite);
+  /* color: var(--main-colorWhite); */
 }
 :root{
     --main-btnBlueColor:#4f46e5;
@@ -55,6 +55,7 @@ a{
 .sidebar header h4{
   font-weight: 500;
   font-size: .98rem;
+  color: var(--main-colorWhite);
 }
 
 .sidebar header img {
@@ -270,46 +271,6 @@ a{
   cursor: pointer;
 }
 
-/* Styles for the blurred background */
-body {
-  overflow: hidden;
-}
-   
-  /* filter: blur(4px); } */
-
-/* Styles for the popup container */
-.tags-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000; /* Make sure the popup is on top of everything */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Styles for the popup content */
-.popup-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-/* Style for the close button */
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
 /* ######################## Timeline ########################### */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 html {
@@ -366,6 +327,7 @@ html {
 .btn{
   border: none;
   font-weight:700;
+  color: var(--main-colorBlack);
 }
 .heading-tag{
   display: flex;

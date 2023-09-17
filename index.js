@@ -39,19 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Get all project cards
-    const projectCards = document.querySelectorAll(".project-card");
-
-    // Add a click event listener to each project card
-    projectCards.forEach((card) => {
-        card.addEventListener("click", function () {
-            // Handle card click here, e.g., open a link or perform an action
-        });
-    });
-});
-
-
 // ##################################### Project Dynamically added ###############
 document.addEventListener("DOMContentLoaded", function () {
     const projectsSection = document.getElementById("projects");
@@ -65,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch('projects.json')
             .then(response => response.json())
             .then(data => {
-                projectsData = data; // Store the original project data
+                projectsData = data.reverse(); // Reverse the order of projects
                 data.forEach(project => {
                     displayProject(project);
                 });
@@ -119,67 +106,50 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-  // Event listener for the "View All Tags" button
-viewAllTagsButton.addEventListener("click", function () {
-    // Clear the search input
-    searchInput.value = "";
+    // Event listener for the "View All Tags" button
+    viewAllTagsButton.addEventListener("click", function () {
+        // Clear the search input
+        searchInput.value = "";
 
-    // Create a div element
-    const tagsItems = document.createElement("div");
-    const ul = document.createElement("ul");
+        // Create a div element
+        const tagsItems = document.createElement("div");
+        const ul = document.createElement("ul");
 
-    // Fetch data from projects.json
-    fetch('projects.json')
-        .then(response => response.json())
-        .then(data => {
-            // Collect all tags into a single array
-            const allTags = [];
-            data.forEach(project => {
-                project.tags.forEach(tag => {
-                    allTags.push(tag);
+        // Fetch data from projects.json
+        fetch('projects.json')
+            .then(response => response.json())
+            .then(data => {
+                // Collect all tags into a single array
+                const allTags = [];
+                data.forEach(project => {
+                    project.tags.forEach(tag => {
+                        allTags.push(tag);
+                    });
                 });
+
+                // Sort tags alphabetically
+                allTags.sort();
+
+                // Remove duplicates by converting the array to a Set and back to an array
+                const uniqueTags = [...new Set(allTags)];
+
+                // Iterate through the unique, sorted tags
+                uniqueTags.forEach(tag => {
+                    const li = document.createElement("li");
+                    li.textContent = tag;
+                    ul.appendChild(li);
+                });
+
+                // Append the unordered list to the div
+                tagsItems.appendChild(ul);
+
+                document.body.appendChild(tagsItems);
+            })
+            .catch(error => {
+                console.error('Error fetching projects:', error);
             });
-
-            // Sort tags alphabetically
-            allTags.sort();
-
-            // Remove duplicates by converting the array to a Set and back to an array
-            const uniqueTags = [...new Set(allTags)];
-
-            // Iterate through the unique, sorted tags
-            uniqueTags.forEach(tag => {
-                const li = document.createElement("li");
-                li.textContent = tag;
-                ul.appendChild(li);
-            });
-
-            // Append the unordered list to the div
-            tagsItems.appendChild(ul);
-
-            // Append the div to a specific element in your HTML (e.g., replace 'document.body' with your desired target element)
-            // For example, if you have a 'tagsContainer' element in your HTML, you can do:
-            // const tagsContainer = document.getElementById("tagsContainer");
-            // tagsContainer.appendChild(tagsItems);
-            // Or you can append it to the document body if that's your intention:
-            document.body.appendChild(tagsItems);
-        })
-        .catch(error => {
-            console.error('Error fetching projects:', error);
-        });
-});
-
-// Append the div to the document (or any other element where you want to display it)
-document.body.appendChild(tagsItems);
-
-
-        // Display all projects
-        projectsSection.innerHTML = "";
-        projectsData.forEach(project => {
-            displayProject(project);
-        });
     });
-
-
+});
 
 
 
@@ -204,9 +174,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to fetch and display timeline data from a JSON file
     function displayTimelineData() {
-        fetch('timeline-data.json') // Replace with the path to your JSON file
+        fetch('timeline-data.json')
             .then(response => response.json())
             .then(data => {
+                // Reverse the data array to display items in a "last in, first show" manner
+                data = data.reverse();
                 data.forEach(timelineItem => {
                     const timelineItemElement = document.createElement("li");
                     timelineItemElement.innerHTML = `
@@ -216,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <span style="background-color: ${timelineItem.color}">${timelineItem.tag}</span>
                     </div>
                     <p>${timelineItem.description}</p>
-                    <button class="btn"> Check it out </button>
+                    <a href="${timelineItem.link}" target="_blank" class="btn">Check it out</a>
                 </div>
                     `;
                     timelineList.appendChild(timelineItemElement);
