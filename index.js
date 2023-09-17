@@ -14,7 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // JavaScript code to load the sidebar content
 document.addEventListener("DOMContentLoaded", function () {
     // Specify the URL of your sidebar HTML file
-    const sidebarUrl = "../sidebar.html";
+    const sidebarUrl = "sidebar.html";
     
     // Reference the sidebar container element
     const sidebarContainer = document.getElementById("sidebar-container");
