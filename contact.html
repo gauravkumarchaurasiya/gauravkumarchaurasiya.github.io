@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body class="contact-body">
+    <div id="sidebar-container"></div>
+    <main class="content contact-main">
+    <header class="contact-header">
+        <h1>Contact Us</h1>
+    </header>
+    <section class="contact-form">
+            <p>Have a New Project in Mind?</p>
+            <h2>Come and say hi or just drop a line.</h2>
+            <form action="submit_contact.php" method="post"> <!-- Replace with your server-side script -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+    <footer class="contact-footer">
+        
+    </footer>
+</main>
+<script src="index.js"></script>
+</body>
+</html>

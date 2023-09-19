@@ -4,12 +4,14 @@
         "tag":"Portfolio",
         "color": "#0048BA",
         "description": "Created and Hosted Portfolio",
-        "link":"https//www.google.com"
+        "link":"https//www.google.com",
+        "buttonContent":"Check it Out"
     },
     {
         "date": "17 September, 2023",
         "tag":"Projects",
         "color": "#00e7fe",
         "description": "Checkouts my Previous Projects",
-        "link":""
+        "link":"",
+        "buttonContent":"Check it"
     }]
