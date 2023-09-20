@@ -218,3 +218,80 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the function to display timeline data
   displayTimelineData();
 });
+
+
+
+
+// #################### BLogs ##########################
+// Replace with your Blogger API key
+// const apiKey = 'AIzaSyDGvSELrJY7S_bpKwDxyGXXX3rDPAejBWs';
+// const blogListContainer = document.getElementById('blog-list');
+// const blogContentContainer = document.getElementById('blog-content');
+
+// // Fetch all posts from Blogger
+// fetch(`https://www.googleapis.com/blogger/v3/blogs/7899995714058715349/posts?key=${apiKey}`)
+//     .then(response => response.json())
+//     .then(data => {
+//         const blogPosts = data.items;
+//         console.log(blogPosts);
+//         // Loop through and display blog titles
+//         blogPosts.forEach(post => {
+//             const postId = post.id;
+//             const postTitle = post.title;
+
+//             const listItem = document.createElement('li');
+//             listItem.textContent = postTitle;
+//             listItem.addEventListener('click', () => {
+//                 // When a title is clicked, fetch and display the blog content
+//                 fetchBlogContent(postId);
+//             });
+
+//             blogListContainer.appendChild(listItem);
+//         });
+//     })
+//     .catch(error => {
+//         console.error('Error fetching Blogger posts:', error);
+//     });
+
+// // Function to fetch and display blog content by post ID
+// function fetchBlogContent(postId) {
+//     fetch(`https://www.googleapis.com/blogger/v3/blogs/7899995714058715349/posts/${postId}?key=${apiKey}`)
+//         .then(response => response.json())
+//         .then(data => {
+//             const postTitle = data.title;
+//             const postContent = data.content;
+
+//             // Display the selected blog content
+//             blogContentContainer.innerHTML = `
+//                 <h2>${postTitle}</h2>
+//                 <div>${postContent}</div>
+//             `;
+//         })
+//         .catch(error => {
+//             console.error('Error fetching blog content:', error);
+//         });
+// }
+
+
+const YOUR_BLOG_ID = 7998938079177568848;
+
+ // Fetch Blogger RSS feed
+ fetch('https://www.blogger.com/feeds/${YOUR_BLOG_ID}/posts/default?alt=rss')
+ .then(response => response.text())
+ .then(data => {
+     const parser = new DOMParser();
+     const xmlDoc = parser.parseFromString(data, 'text/xml');
+     const items = xmlDoc.querySelectorAll('item');
+
+     const blogPosts = document.getElementById('blog-posts');
+
+     items.forEach(item => {
+         const title = item.querySelector('title').textContent;
+         const link = item.querySelector('link').textContent;
+
+         const listItem = document.createElement('li');
+         listItem.innerHTML = `<a href="${link}">${title}</a>`;
+         blogPosts.appendChild(listItem);
+     });
+ })
+ .catch(error => console.error(error));
