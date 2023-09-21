@@ -3,43 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Embedded Blogger Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add CSS styles for your embedded blog container here */
+        iframe {
+            width: 100%;
+            height: 600px; 
+            border: none;
+            
+        }
+    </style>
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    h1 {
-        text-align: center;
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    li {
-        margin-bottom: 20px;
-    }
-    a {
-        text-decoration: none;
-        color: #0078d4;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-</style>
 <body>
-    <div id ="sidebar-container"></div>
+    <div id="sidebar-container"></div>
+    <div id="hamburgerContainer"></div>
     <main class="content">
-        <!-- <h1>Welcome to My Portfolio Blog</h1>
-
-    <ul id="blog-list"></ul>
-    <div id="blog-content"></div> -->
-    <ul id="blog-posts"></ul>
+    <iframe src="https://gauravkumarchaurasiya.blogspot.com/"></iframe>
     </main>
-    <script src="index.js"></script>
 </body>
+<script src="index.js"></script>
 </html>

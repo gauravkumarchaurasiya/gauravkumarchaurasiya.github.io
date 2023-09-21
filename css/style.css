@@ -145,6 +145,95 @@ a{
     display: inline-block;
     margin-right: 10px;
 }
+/* ######################## hamburger ################################# */
+/* Hamburger styles */
+/* #hamburgerContainer{
+} */
+.hamburger {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  /* display: flex; */
+  z-index: 30;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease-in-out;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  margin: 4px;
+  /* background-color: #09979c;  */
+  border: 2px solid #09979c;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hamburger animation classes */
+.change {
+  transform: rotate(-45deg);
+
+}
+.blured{
+  filter: blur(2.5px);
+}
+.change .bar:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 4px);
+}
+
+.change .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -4px);
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  right: -27px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  /* border: 2px solid black; */
+  clip-path: ellipse(186px 188px at 93% 86%);
+  transition: right 0.4s ease-in-out;
+  z-index: 1;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  padding: 12px;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+}
+
+.navbar a:hover {
+  color: #25a6aa;
+  text-decoration: underline;
+}
+
 
 /* ########################### Projects ####################### */
 #projects {
@@ -551,6 +640,29 @@ html {
   .project-footer{
     margin: 0;
   }
+  /* #hamburgerContainer {
+    display: inline-block;
+  } */
+  .hamburger{
+    display: flex;
+  }
+
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    right: -27px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    border: 2px solid black;
+    clip-path: ellipse(217px 217px at 93% 86%);
+    transition: right 0.4s ease-in-out;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
   
 }
 
