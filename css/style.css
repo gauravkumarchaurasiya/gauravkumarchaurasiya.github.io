@@ -225,7 +225,7 @@ a{
 }
 
 .navbar li {
-  padding: 12px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -646,7 +646,7 @@ html {
     background-color: var(--main-colorBlack);
     
   }
-  .home-footer button{
+  .home-footer .follow{
     background-color: var(--main-colorTwitter);
     padding: 2px 4px;
     color: var(--main-colorWhite);
@@ -802,6 +802,10 @@ html {
     flex-direction: column;
     justify-content: flex-end;
   }
+  #viewAllTags {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
 
   
 }
@@ -810,5 +814,9 @@ html {
 @media screen and (max-width: 600px) {
   .project-item {
       width: calc(90% - 20px);
+  }
+  #viewAllTags {
+    padding: 4px 10px;
+    font-size: 12px;
   }
 }
