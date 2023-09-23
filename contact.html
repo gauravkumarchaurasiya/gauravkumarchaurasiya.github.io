@@ -16,22 +16,22 @@
     <section class="contact-form">
             <p>Have a New Project in Mind?</p>
             <h2>Come and say hi or just drop a line.</h2>
-            <form action="submit_contact.php" method="post"> <!-- Replace with your server-side script -->
+            <form action="https://formspree.io/f/mvojgajg" method="POST" netlify>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Ritesh Nirman" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="riteshnirman@gmail.com" required>
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <input type="text" id="subject" name="subject" placeholder="subject" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message here..." required></textarea>
                 </div>
                 <button type="submit">SEND</button>
             </form>

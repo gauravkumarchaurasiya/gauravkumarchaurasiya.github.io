@@ -3,8 +3,8 @@
         "date": "16 September, 2023",
         "tag":"Portfolio",
         "color": "#0048BA",
-        "description": "Created and Hosted Portfolio",
-        "link":"https//www.google.com",
+        "description": "Created and Hosted fully Functional Portfolio Site",
+        "link":"https://gauravkumarchaurasiya.github.io",
         "buttonContent":"Check it Out"
     },
     {
@@ -12,6 +12,6 @@
         "tag":"Projects",
         "color": "#00e7fe",
         "description": "Checkouts my Previous Projects",
-        "link":"",
-        "buttonContent":"Check it"
+        "link":"https://gauravkumarchaurasiya.github.io/projects.html",
+        "buttonContent":"Check it out"
     }]

@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
     projectItem.innerHTML = `
             <img src="${project.imageUrl}" alt="${project.title}">
             <h3>${project.title}</h3>
-            <p>${project.techUsed}</p>
+            <p class="pre">${project.techUsed}</p>
             <p>${project.description}</p>
-            <button class="blueBtn">Check it out</button>
+            <a href=${project.link} target="_blank" class="blueBtn">Check it out<img  class = "right-arrow" src = "images/right-arrow-black-triangle.png"></a>
         `;
 
     // Add the new project to the projects section

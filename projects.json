@@ -1,37 +1,47 @@
-[{
-    "title": "Background ",
-    "techUsed": "Oil painting",
-    "description": "A beautiful sunset over the ocean, painted in oil.",
-    "imageUrl": "../images/background.jpeg",
-    "tags":["Ml project","team project"]
-  },
-  {
-    "title": "Projectsss 2",
-    "techUsed": "dame",
-    "description": "A painted in oil.",
-    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    "tags":["Web d","team project"]
-  },
-  {
-    "title": "A beautiful sunset over the ocean, painted in oil",
-    "techUsed": "python, react,machine learning ,cpp, python visualization",
-    "description": "A painted in oil.A beautiful sunset over the ocean, painted in oil.A beautiful sunset over the ocean, painted in oil",
-    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    "tags":["Ml project","team project"]
-  },
-  {
-    "title": "A beautiful sunset over the ocean, painted in oil",
-    "techUsed": "python, react,machine learning ,cpp, python visualization",
-    "description": "A painted in oil.A beautiful sunset over the ocean, painted in oil.A beautiful sunset over the ocean, painted in oil",
-    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    "tags":["Ml project","team project"]
-  },
-  {
-    "title": "A beautiful sunset over the ocean, painted in oil",
-    "techUsed": "python, react,machine learning ,cpp, python visualization",
-    "description": "A painted in oil.A beautiful sunset over the ocean, painted in oil.A beautiful sunset over the ocean, painted in oil",
-    "imageUrl": "https://th.bing.com/th/id/OIP.T0_Cq-qVQcAjfmb1jsmkowHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    "tags":["Ml project","team project"]
-  }
+[{  "date":"Dec 2020",
+"title": "Store Management System",
+"techUsed": "Python | MySql",
+"description": "A CUI based Store management system with Mysql database connectivty provides authentication, having multiple roles(admin,manager) , saves customer details, having feature of note making and play quiz for fun.",
+"imageUrl": "images/storemanagementsystem.jpg",
+"tags":["Python","Store Managment System","Individual project"],
+"link":"https://youtu.be/NBtVuVMTess?si=0or0oQr4um7TKCJs"
+},
+{
+  "date": "April 2023",
+  "title": "Formify:OCR Form Reader and Validator",
+  "techUsed": "PHP | Optical Character Recognition (OCR) | API Integration",
+  "description": "Formify leverages the power of Optical Character Recognition (OCR) technology to automate data extraction from paper-based forms and match details from the form using OCR and external API integration.",
+  "imageUrl": "images/formify.png",
+  "tags": ["PHP", "OCR", "API", "Data Extraction", "Automation","Team Project"],
+  "link": "https://github.com/gauravkumarchaurasiya/formify"
+},
+  { "date":"July 2023",
+  "title": "The Daily Quest Extension",
+  "techUsed": "HTML | CSS| JS | Github API",
+  "description": "'The Daily Quest' extension, a captivating browser extension that provides daily insights, interesting and joyful coding output questions, stimulating your curiosity and expanding your knowledge of programming.",
+  "imageUrl": "images/thedailyquestextension.jpg",
+  "tags":["Chrome Extension","Web Development","The Daily Quest","Individual project"],
+  "link":"https://github.com/gauravkumarchaurasiya/The-Daily-Quest"
+},
+{
+  "date": "September 2023",
+  "title": "Portfolio Website",
+  "techUsed": "HTML | CSS | JavaScript",
+  "description": "Designed and developed my personal portfolio website to showcase my skills, projects, and experiences in the field of technology.",
+  "imageUrl": "images/responsive portfolio.png",
+  "tags": ["Web Development", "Personal Portfolio", "HTML", "CSS", "JavaScript","Individual project"],
+  "link": "https://gauravkumarchaurasiya.github.io"
+}
+,
+{
+  "date": "June 2023",
+  "title": "PAMAP2 Activity Classification",
+  "techUsed": "Machine Learning Classifier | Preprocessing | Python",
+  "description": "This project presents a comprehensive comparative analysis of various machine learning models for activity recognition using the PAMAP2 dataset. The primary objective is to evaluate and compare the performance of different machine learning classifiers in accurately classifying human activities based on sensor data.",
+  "imageUrl": "images/pamap2.png",
+  "tags": ["Machine Learning", "Data Analysis", "Python", "Activity Recognition", "PAMAP2 Dataset"],
+  "link": "https://sites.google.com/view/pamap2activityclassification/home"
+}
+
 
 ]
