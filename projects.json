@@ -42,6 +42,16 @@
   "tags": ["Machine Learning", "Data Analysis", "Python", "Activity Recognition", "PAMAP2 Dataset"],
   "link": "https://sites.google.com/view/pamap2activityclassification/home"
 }
+,
+{
+  "date": "October 2023",
+  "title": "Real Time Sentiment Analysis using ML",
+  "techUsed": "Machine Learning Classifier | Preprocessing | Python | Flask ",
+  "description": "Twitter Sentiment Analysis after preprocess tweets using SVC and RFC using Flask model intreprets and do Real time analysis.",
+  "imageUrl": "images/sentiment_analysis.jpg",
+  "tags": ["Machine Learning", "Sentiment Analysis", "Python", "Real Time", "Sentiment140 Dataset"],
+  "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home"
+}
 
 
 ]

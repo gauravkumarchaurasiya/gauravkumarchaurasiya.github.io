@@ -14,4 +14,15 @@
         "description": "Checkouts my Previous Projects",
         "link":"https://gauravkumarchaurasiya.github.io/projects.html",
         "buttonContent":"Check it out"
-    }]
+    }
+    ,
+    {
+        "date": "15 October, 2023",
+        "tag":"Real Time Sentiment Analysis",
+        "color": "#00e7fe",
+        "description": "A Real Time sentiment Analysis Project using Machine Learning.",
+        "link":"https://sites.google.com/view/sentiment-analysis-using-ml/home",
+        "buttonContent":"Check it out"
+    }
+
+]
