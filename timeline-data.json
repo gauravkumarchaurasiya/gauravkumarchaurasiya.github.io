@@ -24,5 +24,14 @@
         "link":"https://sites.google.com/view/sentiment-analysis-using-ml/home",
         "buttonContent":"Check it out"
     }
+    ,
+    {
+        "date": "16 January, 2024",
+        "tag":"Projects",
+        "color": "#00e7fe",
+        "description": "A End to End ML Project to predict Student Performance end to deployed on PythonAnywhere.",
+        "link":"http://gauravkumarchaurasiya.pythonanywhere.com/",
+        "buttonContent":"Check it out"
+    }
 
 ]

@@ -52,6 +52,16 @@
   "tags": ["Machine Learning", "Sentiment Analysis", "Python", "Real Time", "Sentiment140 Dataset"],
   "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home"
 }
+,
+{
+  "date": "January 2024",
+  "title": "End to End Data Science Project Student Performance",
+  "techUsed": "ML Regression | PythonAnywhere | Python(OOPs) | Flask ",
+  "description": "A machine learning model designed to predict Maths scores based on various factors.This project structured in different pipeline and deployed on pythonanywhere web app.",
+  "imageUrl": "images/student_performance.png",
+  "tags": ["Machine Learning", "Student Performance Predictor", "Python", "End to end Ml project", "PythonAnywhere"],
+  "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project"
+}
 
 
 ]
