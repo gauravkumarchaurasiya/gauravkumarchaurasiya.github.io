@@ -44,6 +44,16 @@
 }
 ,
 {
+  "date": "September 2023",
+  "title": "G.A.R.I.B-General-Application-for-Rural-Income-Building",
+  "techUsed": "Intel Dev Cloud | Android Studio(Java) | Firebase",
+  "description": "Garib caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
+  "imageUrl": "images/garib.jpg",
+  "tags": ["G.A.R.I.B-General-Application-for-Rural-Income-Building", "Firebase", "Android App", "Android Studio(java)", "Intel"],
+  "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main"
+}
+,
+{
   "date": "October 2023",
   "title": "Real Time Sentiment Analysis using ML",
   "techUsed": "Machine Learning Classifier | Preprocessing | Python | Flask ",
@@ -51,6 +61,16 @@
   "imageUrl": "images/sentiment_analysis.jpg",
   "tags": ["Machine Learning", "Sentiment Analysis", "Python", "Real Time", "Sentiment140 Dataset"],
   "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home"
+}
+,
+{
+  "date": "November 2023",
+  "title": "Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
+  "techUsed": "YOLOv8| LabelImg/Roboflow | OpenCv | Python(Modular Programming) ",
+  "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration. The project's objective was to merge multiple models, analyze video frames, overlay model results, and achieve instant outcomes via a live webcam stream.",
+  "imageUrl": "images/marine_detector_identifier.png",
+  "tags": ["YOLOv8", "Real-Time Underwater Imaging", "Python", "Real Time", "Opencv","Dataset Creation"],
+  "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-"
 }
 ,
 {

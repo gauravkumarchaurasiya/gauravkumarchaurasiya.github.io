@@ -14,6 +14,14 @@
         "description": "Checkouts my Previous Projects",
         "link":"https://gauravkumarchaurasiya.github.io/projects.html",
         "buttonContent":"Check it out"
+    },
+    {
+        "date": "30 September, 2023",
+        "tag":"Projects",
+        "color": "#00e7fe",
+        "description": "G.A.R.I.B. caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
+        "link":"https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
+        "buttonContent":"Check it out"
     }
     ,
     {
@@ -22,6 +30,24 @@
         "color": "#00e7fe",
         "description": "A Real Time sentiment Analysis Project using Machine Learning.",
         "link":"https://sites.google.com/view/sentiment-analysis-using-ml/home",
+        "buttonContent":"Check it out"
+    }
+    ,
+    {
+        "date": "1 November, 2023",
+        "tag":"Internship",
+        "color": "#3c891e",
+        "description": "A Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
+        "link":"https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
+        "buttonContent":"Check it out"
+    }
+    ,
+    {
+        "date": "1 December, 2023",
+        "tag":"Volunteer",
+        "color": "#e53cff",
+        "description": "Reflecting on 2.5 Years of Impactful Volunteer Journey and glimpse in College",
+        "link":"https://drive.google.com/file/d/149lHDfxBm_rssGH3UlrqB1t3tymXUaJL/view?usp=sharing",
         "buttonContent":"Check it out"
     }
     ,
