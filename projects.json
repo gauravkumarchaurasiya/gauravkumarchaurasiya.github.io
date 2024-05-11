@@ -67,7 +67,7 @@
   "date": "November 2023",
   "title": "Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
   "techUsed": "YOLOv8| LabelImg/Roboflow | OpenCv | Python(Modular Programming) ",
-  "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration. The project's objective was to merge multiple models, analyze video frames, overlay model results, and achieve instant outcomes via a live webcam stream.",
+  "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration.",
   "imageUrl": "images/marine_detector_identifier.png",
   "tags": ["YOLOv8", "Real-Time Underwater Imaging", "Python", "Real Time", "Opencv","Dataset Creation"],
   "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-"
