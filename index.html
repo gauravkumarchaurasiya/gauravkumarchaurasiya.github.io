@@ -76,14 +76,39 @@
           </div>
           <div class="right-content">
             <div class="services-div">
-              <ul>
+              <!-- <ul>
                 <li><a href="">Data Analysis</a></li>
                 <li><a href="">Machine Learning Model Development</a></li>
                 <li><a href="">Natural Language Processing Solutions</a></li>
                 <li><a href="">Deep Learning Applications</a></li>
                 <li><a href="">MLOps Operations</a></li>
                 <li><a href="">AI Enabled Services</a></li>
-              </ul>
+              </ul> -->
+
+              <div id="myCanvasContainer">
+                <canvas width="600" height="600" id="myCanvas"></canvas>
+            </div>
+        
+            <ul id="tagList" style="display: none;">
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Deep Learning</a></li>
+                <li><a href="#">Neural Networks</a></li>
+                <li><a href="#">Data Mining</a></li>
+                <li><a href="#">Big Data</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">Visualization</a></li>
+                <li><a href="#">NLP</a></li>
+                <li><a href="#">AI Ethics</a></li>
+                <li><a href="#">Predictive Modeling</a></li>
+                <li><a href="#">Feature Engineering</a></li>
+                <li><a href="#">Model Deployment</a></li>
+                <li><a href="#">Data Cleaning</a></li>
+                <li><a href="#">SQL</a></li>
+                <li><a href="#">Data Wrangling</a></li>
+            </ul>
+        
             </div>
           </div>
       
@@ -112,5 +137,38 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.goat1000.com/tagcanvas.min.js?2.9"></script>
+    <script>
+        window.onload = function() {
+            console.log("TagCanvas script loaded and executing.");
+
+            // Initialize TagCanvas with custom configuration
+            TagCanvas.Start('myCanvas', 'tagList', {
+                textColour: '#259cf7',
+                outlineColour: '#25dbf7',
+                // reverse: true,
+                depth: 0.5,
+                maxSpeed: 0.08,
+                minSpeed: 0.01,
+                radiusX: 1,  
+              radiusY: 1,  // Adjust the Y-axis radius
+              radiusZ: 1,  // Adjust the Z-axis radius
+              weight: true,  // Enable weight mode for different sizes
+              weightMode: 'both', // Apply weight to both size and positioning
+              zoom: true  ,// Prevent the sphere from resizing with browser zoom
+              responsive: false, // Disable responsive resizing
+              scale: 1
+            });
+
+            // Additional check to ensure the canvas is displayed correctly
+            var canvas = document.getElementById('myCanvas');
+            if (canvas.style.display === 'none' || canvas.style.visibility === 'hidden' || canvas.offsetHeight === 0) {
+                console.error("TagCanvas failed to display properly.");
+            } else {
+                console.log("TagCanvas started and displayed successfully.");
+            }
+        };
+    </script>
   </body>
 </html>
