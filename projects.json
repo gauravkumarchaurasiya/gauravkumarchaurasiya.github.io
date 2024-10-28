@@ -4,7 +4,8 @@
 "description": "A CUI based Store management system with Mysql database connectivty provides authentication, having multiple roles(admin,manager) , saves customer details, having feature of note making and play quiz for fun.",
 "imageUrl": "images/storemanagementsystem.jpg",
 "tags":["Python","Store Managment System","Individual project"],
-"link":"https://youtu.be/NBtVuVMTess?si=0or0oQr4um7TKCJs"
+"link":"https://youtu.be/NBtVuVMTess?si=0or0oQr4um7TKCJs",
+"category": "Web Development"
 },
 {
   "date": "April 2023",
@@ -13,7 +14,8 @@
   "description": "Formify leverages the power of Optical Character Recognition (OCR) technology to automate data extraction from paper-based forms and match details from the form using OCR and external API integration.",
   "imageUrl": "images/formify.png",
   "tags": ["PHP", "OCR", "API", "Data Extraction", "Automation","Team Project"],
-  "link": "https://github.com/gauravkumarchaurasiya/formify"
+  "link": "https://github.com/gauravkumarchaurasiya/formify",
+  "category": "Computer Vision"
 },
   { "date":"July 2023",
   "title": "The Daily Quest Extension",
@@ -21,7 +23,8 @@
   "description": "'The Daily Quest' extension, a captivating browser extension that provides daily insights, interesting and joyful coding output questions, stimulating your curiosity and expanding your knowledge of programming.",
   "imageUrl": "images/thedailyquestextension.jpg",
   "tags":["Chrome Extension","Web Development","The Daily Quest","Individual project"],
-  "link":"https://github.com/gauravkumarchaurasiya/The-Daily-Quest"
+  "link":"https://github.com/gauravkumarchaurasiya/The-Daily-Quest",
+  "category": "Web Development"
 },
 {
   "date": "September 2023",
@@ -30,7 +33,8 @@
   "description": "Designed and developed my personal portfolio website to showcase my skills, projects, and experiences in the field of technology.",
   "imageUrl": "images/responsive portfolio.png",
   "tags": ["Web Development", "Personal Portfolio", "HTML", "CSS", "JavaScript","Individual project"],
-  "link": "https://gauravkumarchaurasiya.github.io"
+  "link": "https://gauravkumarchaurasiya.github.io",
+  "category": "Web Development"
 }
 ,
 {
@@ -40,7 +44,8 @@
   "description": "This project presents a comprehensive comparative analysis of various machine learning models for activity recognition using the PAMAP2 dataset. The primary objective is to evaluate and compare the performance of different machine learning classifiers in accurately classifying human activities based on sensor data.",
   "imageUrl": "images/pamap2.png",
   "tags": ["Machine Learning", "Data Analysis", "Python", "Activity Recognition", "PAMAP2 Dataset"],
-  "link": "https://sites.google.com/view/pamap2activityclassification/home"
+  "link": "https://sites.google.com/view/pamap2activityclassification/home",
+  "category": "Machine Learning"
 }
 ,
 {
@@ -50,7 +55,8 @@
   "description": "Garib caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
   "imageUrl": "images/garib.jpg",
   "tags": ["G.A.R.I.B-General-Application-for-Rural-Income-Building", "Firebase", "Android App", "Android Studio(java)", "Intel"],
-  "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main"
+  "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
+  "category": "Android Development"
 }
 ,
 {
@@ -60,7 +66,8 @@
   "description": "Twitter Sentiment Analysis after preprocess tweets using SVC and RFC using Flask model intreprets and do Real time analysis.",
   "imageUrl": "images/sentiment_analysis.jpg",
   "tags": ["Machine Learning", "Sentiment Analysis", "Python", "Real Time", "Sentiment140 Dataset"],
-  "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home"
+  "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home",
+  "category": "Machine Learning"
 }
 ,
 {
@@ -70,8 +77,8 @@
   "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration.",
   "imageUrl": "images/marine_detector_identifier.png",
   "tags": ["YOLOv8", "Real-Time Underwater Imaging", "Python", "Real Time", "Opencv","Dataset Creation"],
-  "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-"
-}
+  "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
+"category": "Computer Vision"}
 ,
 {
   "date": "January 2024",
@@ -80,7 +87,8 @@
   "description": "A machine learning model designed to predict Maths scores based on various factors.This project structured in different pipeline and deployed on pythonanywhere web app.",
   "imageUrl": "images/student_performance.png",
   "tags": ["Machine Learning", "Student Performance Predictor", "Python", "End to end Ml project", "PythonAnywhere"],
-  "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project"
+  "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project",
+  "category": "MLOPs"
 }
 
 

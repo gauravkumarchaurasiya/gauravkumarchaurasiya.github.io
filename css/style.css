@@ -8,9 +8,16 @@
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Poppins','Inter','Roboto', sans-serif;
   }
+
+body{
+  cursor: none;
+  overflow: auto;
+  /* background-color: #00f; */
+}
   ul{
   list-style: none;
 }
+
 a{
   text-decoration: none;
   /* color: var(--main-colorWhite); */
@@ -49,6 +56,27 @@ a{
     font-size: large;
     border-radius: 4px;
     margin: 15px;
+}
+
+.trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgba(248, 51, 6, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulse 1.2s infinite ease-out;
+}
+
+@keyframes pulse {  
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
 }
 
 /* Header styles */
@@ -248,6 +276,8 @@ a{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
 .heading{
   align-items: center;
   margin: 5px 15px;
@@ -263,7 +293,7 @@ a{
 }
 .project-item {
     min-width: 22%;
-    width: calc(24.7% - 20px);
+    width: calc(24.7% - 12px);
     margin-bottom: 20px;
     border: 1px solid #ccc;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -277,6 +307,7 @@ a{
     flex-wrap: wrap;
 }
 
+
 .project-item:hover {
     transform: scale(1.03);
     z-index: 1;
@@ -285,7 +316,7 @@ a{
 
 .project-item img {
     width: 100%;
-    height: 180px; 
+    height: 200px; 
 }
 .project-item a img{
   margin-left: 5px;
@@ -361,8 +392,20 @@ a{
   background-color: rgba(93, 3, 162, 0.775); /* Change the background color on hover */
 }
 
+.category-section {
+  margin-bottom: 40px;
+}
 
-
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 100%;
+  clear: both;
+  /* background-color: #00ccff; */
+  color: #007bff;
+  /* text-decoration: ; */
+}
 
 /* ################## Search bar and tags @@@@@############# */
 .searchbar {
