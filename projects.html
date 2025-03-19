@@ -26,9 +26,19 @@
             <!-- Tags will be displayed here alphabetically -->
         </ul>
     </div>
-      <section id="projects">
-        <!-- Projects will be displayed here dynamically -->
-      </section>
+
+      <section class="projects">
+        <div class="filter-container">
+          <label for="viewMode">  </label>
+          <select id="viewMode">
+              <option value="latest">Projects (Latest First)</option>
+              <option value="grouped">Grouped Projects</option>
+          </select>
+      </div>
+        <div class="project-container" id="project-container">
+            <!-- Projects will be dynamically added here -->
+        </div>
+    </section>
       
     </main>
     <footer class="project-footer">

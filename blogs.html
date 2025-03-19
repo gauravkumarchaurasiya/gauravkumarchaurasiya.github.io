@@ -3,98 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogger Blogs</title>
+    <title>My Blogs</title>
     <link rel="icon" type="image/png" href="/images/favicon.jpg">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Add CSS styles for your embedded blog container here */
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            /* width: 90%; */
-            max-width: 95%;
-        }
-
-        .container iframe {
-            width: 120vw;
-            height: 80vh;
-            border: none;
-        }
-
-        .card-container {
-            width: 40%;
-            margin-left: 20px;
-            text-align: center;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .card img {
-            width: 100px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .card h2 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .card p {
-            color: #666;
-        }
-
-        .cta-button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            margin-top: 10px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div id="sidebar-container"></div>
     <div id="hamburgerContainer"></div>
     <main class="content">
-        <div class="container">
-            <iframe src="https://medium.com/@gauravkumarchaurasiya/feed"></iframe>
-            <div class="card-container">
-                <div class="card">
-                    <img src="/images/mediumprofile.png" alt="Profile Picture">
-                    <h2>Gaurav Kumar Chaurasiya</h2>
-                    <p>Medium Blogger</p>
-                    <p>Writing about technology, AI, and Data Science</p>
-                    <a href="https://medium.com/@gauravkumarchaurasiya" class="cta-button" target="_blank">Visit My Medium Page</a>
-                </div>
-            </div>
-        </div>
+        <h1 class="heading">BLOGS</h1>
+     
+            <section id="blog" class="blog-container">
+                <h2 class="section-title">Latest Blogs</h2>
+                <div class="blog-list" id="blogList"></div>
+            </section>
+
     </main>
 </body>
 <script src="index.js"></script>

@@ -5,22 +5,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Inter', sans-serif; */
     font-family: 'Poppins','Inter','Roboto', sans-serif;
   }
-
 body{
   cursor: none;
   overflow: auto;
-  /* background-color: #00f; */
 }
   ul{
   list-style: none;
 }
-
 a{
   text-decoration: none;
-  /* color: var(--main-colorWhite); */
 }
 :root{
     --main-btnBlueColor:#4f46e5;
@@ -28,8 +23,7 @@ a{
     --main-colorBlack:#000;
     --main-colorTwitter:#0c7abf;
   }
-  
-  /* Basic layout setup */
+
   .sidebar {
   font-family: 'OpenSans', sans-serif;
     width: 200px;
@@ -101,7 +95,6 @@ a{
   
   margin-top: 50px;
 }
-/* Navigation styles */
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
@@ -181,9 +174,7 @@ a{
     margin-right: 10px;
 }
 /* ######################## hamburger ################################# */
-/* Hamburger styles */
-/* #hamburgerContainer{
-} */
+
 .hamburger {
   display: none;
   position: fixed;
@@ -192,7 +183,6 @@ a{
   cursor: pointer;
   width: 30px;
   height: 20px;
-  /* display: flex; */
   z-index: 30;
   flex-direction: column;
   justify-content: space-between;
@@ -203,7 +193,6 @@ a{
   width: 100%;
   height: 3px;
   margin: 4px;
-  /* background-color: #09979c;  */
   border: 2px solid #09979c;
   border-radius: 2px;
   transition: background-color 0.3s ease-in-out;
@@ -233,7 +222,7 @@ a{
 .navbar {
   position: fixed;
   bottom: 0;
-  right: -27px; /* Initially hidden */
+  right: -27px;
   width: 250px;
   height: 100%;
   background-color: #333;
@@ -270,88 +259,142 @@ a{
 }
 
 
-/* ########################### Projects ####################### */
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-
 .heading{
+ align-items: center;
+ margin: 5px 15px;
+ margin-top: 30px;
+ font-weight: 700;
+ text-transform: uppercase;
+ text-align: center;
+ font-size: 2rem;
+ transition: text-decoration 0.3s ease-in;
+} 
+
+/* ################################ project ############### */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.project-container h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 30px 0 10px;
+  color: #333;
+  grid-column: 1 / -1; 
+}
+/* Project Card */
+ .project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  min-height: 400px; 
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card:hover img {
+  filter: blur(1px) brightness(80%);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.project-card .project-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(153, 153, 153, 0.18), rgb(0, 0, 0)); 
+  color: white;
+  display: flex;
   align-items: center;
-  margin: 5px 15px;
-  margin-top: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
+  justify-content: center;
   text-align: center;
-  font-size: 2rem;
-  transition: text-decoration 0.3s ease-in;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-.heading:hover{
-  text-decoration: underline;
+
+.project-card:hover .project-description {
+  opacity: 1;
+} 
+
+/* Project Info */
+.project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  flex-grow: 1; 
+  padding: 15px;
 }
-.project-item {
-    min-width: 22%;
-    width: calc(24.7% - 12px);
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: transform 0.2s;
-    cursor: pointer;
-    overflow: hidden;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+.project-card h3 {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* View Button */
+.project-card .project-link {
+  align-self: center; 
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #007bff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin-top: auto; 
+}
+
+.project-card .project-link:hover {
+  background: #0056b3;
+}
+
+.filter-container {
+  text-align: left;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px; 
+}
+
+.filter-container label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#viewMode {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
-.project-item:hover {
-    transform: scale(1.03);
-    z-index: 1;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-item img {
-    width: 100%;
-    height: 200px; 
-}
-.project-item a img{
-  margin-left: 5px;
-  width: 0.6rem;
-  height: 0.6rem;
-  align-items: end;
-  filter: invert(8);
-}
-.project-item h3 {
-  width: 95%;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin:5px 15px;
-}
-
-.project-item p {
-  width: 96%;
-    font-size: .95rem;
-    font-weight: 400;
-    margin:10px 10px;
-  }
-  .project-item .pre{
-    width: 90%;
-    font-family: 'IBM Plex Serif', serif;
-      font-size: 1rem;
-      font-weight: 500;
-      margin:1px 10px;
-  }
-  
-.project-item a {
-    /* margin:5px 10px; */
-    font-size: 1rem;
-    margin-top: auto;
-    text-align: center;
-}
 .project-footer{
   position: relative;
   bottom: 0;
@@ -417,6 +460,7 @@ h2 {
 #searchInput {
   
   padding: 10px;
+  margin-left: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   flex-grow: 6;
@@ -877,14 +921,68 @@ html {
   padding: 1rem;
 }
 
-/* Media Queries for Responsiveness */
+/* ############################ BLOG #####################3333333 */
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
-/* Adjust sidebar and content for smaller screens */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-item {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px); 
+}
+
+.blog-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   .sidebar {
       display: none;
   }
-
+  .blog-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+    will-change: transform; 
+  }
+  
   .content {
       margin-left: 0;
   }
@@ -921,8 +1019,15 @@ html {
     padding: 4px 10px;
     font-size: 12px;
   }
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 
-  
+.project-card {
+    min-height: auto; 
+}
 }
 
 /* Adjust project item width for even smaller screens */
