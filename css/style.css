@@ -660,18 +660,18 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); 
+  /* background-color: rgba(0, 0, 0, 0.5);  */
   padding: 10px;
   color: #fff; 
   /* font-size: 18px;  */
   .name{
-    font-size: 0.7rem;
-  }
-  .profession{
     font-size: 1.9rem;
-    font-weight: 600;
     text-transform: uppercase;
     margin: 10px 5px;
+    font-weight: 600;
+  }
+  .profession{
+    font-size: 0.8rem;
   }
   .quotes{
     font-size: 0.8rem;
@@ -694,7 +694,8 @@ html {
   justify-content: center;
   flex-direction: column;
   /* background-color: green; */
-  width: 30%;
+  /* width: 30%; */
+  width: 100%;
 }
 .small{
   margin: 5px;
@@ -706,7 +707,7 @@ html {
 }
 .right-content {
   /* background-color: blue; */
-  width: 70%; /* Adjust the width as needed */
+  width: 85%; /* Adjust the width as needed */
 }
 .normal p{
   font-size: 1.2rem;
@@ -792,9 +793,35 @@ html {
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  background: #f9f9f9;
+}
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
+.service-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
 
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.footer{
+  margin-top: 20px;
+}
 
 .home-footer{
     display: none;

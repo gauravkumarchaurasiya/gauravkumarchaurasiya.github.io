@@ -1,0 +1,150 @@
+.banner {
+
+    overflow: hidden;
+    background: #1a1a1a; /* Dark theme background */
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.element {
+    position: absolute;
+    opacity: 0;
+    animation: float 10s infinite ease-in-out;
+}
+
+.element i {
+    font-size: 0.75em; /* Adjust size as needed */
+    color: #ffffff;
+    /* text-shadow: 0 0 10px #fff700, 0 0 20px #00ffbb, 0 0 30px #ff7700, 0 0 40px #ff00ee; */
+    text-shadow: 0 0 10px #0066ff, 0 0 20px #007bff, 0 0 30px #007bff, 0 0 40px #007bff;
+}
+
+@keyframes float {
+    0% {
+        opacity: 0;
+        transform: translate(var(--startX), var(--startY)) scale(0.5);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--endX), var(--endY)) scale(1.5) rotate(var(--rotation));
+    }
+}
+
+/* Adjust animation delays for more elements */
+.element:nth-child(5n+1) { animation-delay: 0s; }
+.element:nth-child(5n+2) { animation-delay: 1s; }
+.element:nth-child(5n+3) { animation-delay: 2s; }
+.element:nth-child(5n+4) { animation-delay: 3s; }
+.element:nth-child(5n+5) { animation-delay: 4s; }
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Grid */
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project Image */
+  .project-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Project Info */
+  /* .project-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .project-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+   */
+  /* .project-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  } */
+  
+  .project-tech {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+
+   
+   .cta-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+.section-divider {
+    width: 80%; /* Adjust width as needed */
+    margin: 40px auto; /* Space above and below */
+    border: none;
+    height: 2px; /* Thickness */
+    background: linear-gradient(to right, #ddd, #007bff, #ddd); /* Gradient effect */
+}
