@@ -690,11 +690,8 @@ html {
 
 .left-content {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
-  /* background-color: green; */
-  /* width: 30%; */
   width: 100%;
 }
 .small{
