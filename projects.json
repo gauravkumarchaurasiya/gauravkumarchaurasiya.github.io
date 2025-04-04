@@ -158,5 +158,40 @@
         ],
         "link": "https://bpe-tokenizer.streamlit.app",
         "category": "Natural Language Processing"
+    },
+    {
+        "title": "AI-Powered Expense Tracker & Budget Advisor",
+        "date": "February 2025",
+        "techUsed": "Python | FastAPI | MongoDB ",
+        "description": "The AI-Powered Expense Tracker is a web-based financial management system designed to help users monitor and optimize their daily and monthly expenses. ",
+        "imageUrl": "images/Expense_Tracker_&_Advisor.png",
+        "tags": [
+            "Expense Tracker and Advisor",
+            "MongoDB",
+            "FastAPI",
+            "Python",
+            "Individual Project",
+            "Finance"
+        ],
+        "link": "https://expense-tracking-and-budgeting-by-gkc.onrender.com/",
+        "category": "Financial AI"
+    },
+    {
+        "title": "Stock AI Trader",
+        "date": "November 2024",
+        "techUsed": "Python | Streamlit | Plotly ",
+        "description": "An AI-based modular backtesting platform for retail investors, traders, and researchers. It allows users to simulate strategies over historical data with real-time performance tracking.",
+        "imageUrl": "images/stock_ai_trader.png",
+        "tags": [
+            "Finance AI",
+            "Backtesting",
+            "Trading Strategy",
+            "Individual Project",
+            "Python",
+            "Streamlit",
+            "Minor Project"
+        ],
+        "link": " https://stock-ai-trader-by-gkc.streamlit.app/",
+        "category": "Financial AI"
     }
 ]
