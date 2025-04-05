@@ -78,5 +78,21 @@
         "description": "Launched an AI-based modular backtesting platform for retail investors, traders, and researchers. It allows users to simulate strategies over historical data with real-time performance tracking.",
         "link": "https://stock-ai-trader-by-gkc.streamlit.app/",
         "buttonContent": "Visit Project"
+    },
+    {
+        "date": "30 July, 2024",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "A real-time facial feature detection system using YOLO-NAS and webcam input. Detects eyes, nose, mouth, ears, eyebrows, and hair with a clean UI powered by FastAPI and Tailwind CSS.",
+        "link": "https://facial-features-detection.onrender.com",
+        "buttonContent": "Try It Out"
+    },
+    {
+        "date": "4 August, 2024",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "An automated image captioning system using VGG16, attention mechanism, and LSTM, deployed with Streamlit. Upload an image and generate captions based on the Flickr8k dataset.",
+        "link": "https://automated-image-captioning.streamlit.app/",
+        "buttonContent": "Try It Out"
     }
 ]
