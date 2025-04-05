@@ -193,5 +193,38 @@
         ],
         "link": " https://stock-ai-trader-by-gkc.streamlit.app/",
         "category": "Financial AI"
+    },
+    {
+        "title": "Real-Time Facial Feature Detection using YOLO-NAS",
+        "date": "July 2024",
+        "techUsed": "YOLO-NAS | Roboflow | FastAPI | Tailwind CSS | JavaScript | Roboflow Anotator",
+        "description": "A real-time facial feature detection system powered by YOLO-NAS and deployed via FastAPI. It detects facial components like eyes, nose, mouth, ears, eyebrows, and hair using webcam input and displays live results with bounding boxes.",
+        "imageUrl": "images/facial_features_output.png",
+        "tags": [
+            "YOLO-NAS",
+            "Facial Feature Detection",
+            "Computer Vision",
+            "Roboflow"
+        ],
+        "link": "https://facial-features-detection.onrender.com",
+        "category": "Computer Vision"
+    },
+    {
+        "title": "Automated Image Captioning",
+        "date": "August 2024",
+        "techUsed": "Python | TensorFlow | VGG-16 | Bahdanau Attention | Streamlit",
+        "description": "An automated image captioning system using deep learning, combining VGG16 for feature extraction, Bahdanau Attention, and LSTM for caption generation. Users can upload an image and receive a contextually relevant caption through a Streamlit web interface.",
+        "imageUrl": "images/aic.png",
+        "tags": [
+            "Automated Image Captioning",
+            "Deep Learning",
+            "Bahdanau Attention",
+            "LSTM",
+            "streamlit",
+            "Grouped Project",
+            ""
+        ],
+        "link": "https://automated-image-captioning.streamlit.app/",
+        "category": "Deep Learning"
     }
 ]
