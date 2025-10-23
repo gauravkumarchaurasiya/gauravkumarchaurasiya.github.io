@@ -58,6 +58,15 @@
         "description": "A End to End ML Project to predict Student Performance end to deployed on PythonAnywhere.",
         "link":"http://gauravkumarchaurasiya.pythonanywhere.com/",
         "buttonContent":"Check it out"
-    }
+    },
+    {
+    "date": "20 September, 2025",
+    "tag": "Projects",
+    "color": "#00e7fe",
+    "description": "An AI-powered content creation studio that generates blogs, images, videos, and memes using FastAPI, HuggingFace, and Google Gemini — deployed on Render.",
+    "link": "https://creativenexus-ai.onrender.com/",
+    "buttonContent": "Go to Project"
+}
+
 
 ]

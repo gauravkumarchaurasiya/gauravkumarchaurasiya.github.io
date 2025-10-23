@@ -90,6 +90,16 @@
   "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project",
   "category": "MLOPs"
 }
-
+,{
+  "date": "September 2025",
+  "title": "CreativeNexusAI — AI-Powered Content Creation Studio",
+  "techUsed": "FastAPI | FAISS | HuggingFace | Google Gemini | MongoDB | RAG Chatbot ",
+  "description": "CreativeNexusAI is an all-in-one AI-powered studio that empowers users to generate blogs, images, videos, and memes in seconds. It integrates multiple AI models from HuggingFace and Google Gemini, enabling creators and developers to automate content generation with modular FastAPI APIs and an intuitive frontend.",
+  "imageUrl": "images/creative_nexus_ai.png",
+  "tags": ["Generative AI", "FastAPI", "Content Generation", "Gemini API", "HuggingFace", "Full Stack AI Project"],
+  "link": "https://github.com/gauravkumarchaurasiya/content-generator",
+  "other_link": ["https://drive.google.com/file/d/1PYnA8oG31RV4XKhFBmVDAsBvTJMPIlG6/view?usp=sharing","https://drive.google.com/file/d/1ggEWCVtKUzzWYze6aRbMTNeEpZf8EwXF/view?usp=sharing"],
+  "category": "Generative AI"
+}
 
 ]
