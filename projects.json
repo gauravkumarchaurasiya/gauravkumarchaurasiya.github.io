@@ -1,95 +1,233 @@
-[{  "date":"Dec 2020",
-"title": "Store Management System",
-"techUsed": "Python | MySql",
-"description": "A CUI based Store management system with Mysql database connectivty provides authentication, having multiple roles(admin,manager) , saves customer details, having feature of note making and play quiz for fun.",
-"imageUrl": "images/storemanagementsystem.jpg",
-"tags":["Python","Store Managment System","Individual project"],
-"link":"https://youtu.be/NBtVuVMTess?si=0or0oQr4um7TKCJs",
-"category": "Web Development"
-},
-{
-  "date": "April 2023",
-  "title": "Formify:OCR Form Reader and Validator",
-  "techUsed": "PHP | Optical Character Recognition (OCR) | API Integration",
-  "description": "Formify leverages the power of Optical Character Recognition (OCR) technology to automate data extraction from paper-based forms and match details from the form using OCR and external API integration.",
-  "imageUrl": "images/formify.png",
-  "tags": ["PHP", "OCR", "API", "Data Extraction", "Automation","Team Project"],
-  "link": "https://github.com/gauravkumarchaurasiya/formify",
-  "category": "Computer Vision"
-},
-  { "date":"July 2023",
-  "title": "The Daily Quest Extension",
-  "techUsed": "HTML | CSS| JS | Github API",
-  "description": "'The Daily Quest' extension, a captivating browser extension that provides daily insights, interesting and joyful coding output questions, stimulating your curiosity and expanding your knowledge of programming.",
-  "imageUrl": "images/thedailyquestextension.jpg",
-  "tags":["Chrome Extension","Web Development","The Daily Quest","Individual project"],
-  "link":"https://github.com/gauravkumarchaurasiya/The-Daily-Quest",
-  "category": "Web Development"
-},
-{
-  "date": "September 2023",
-  "title": "Portfolio Website",
-  "techUsed": "HTML | CSS | JavaScript",
-  "description": "Designed and developed my personal portfolio website to showcase my skills, projects, and experiences in the field of technology.",
-  "imageUrl": "images/responsive portfolio.png",
-  "tags": ["Web Development", "Personal Portfolio", "HTML", "CSS", "JavaScript","Individual project"],
-  "link": "https://gauravkumarchaurasiya.github.io",
-  "category": "Web Development"
-}
-,
-{
-  "date": "June 2023",
-  "title": "PAMAP2 Activity Classification",
-  "techUsed": "Machine Learning Classifier | Preprocessing | Python",
-  "description": "This project presents a comprehensive comparative analysis of various machine learning models for activity recognition using the PAMAP2 dataset. The primary objective is to evaluate and compare the performance of different machine learning classifiers in accurately classifying human activities based on sensor data.",
-  "imageUrl": "images/pamap2.png",
-  "tags": ["Machine Learning", "Data Analysis", "Python", "Activity Recognition", "PAMAP2 Dataset"],
-  "link": "https://sites.google.com/view/pamap2activityclassification/home",
-  "category": "Machine Learning"
-}
-,
-{
-  "date": "September 2023",
-  "title": "G.A.R.I.B-General-Application-for-Rural-Income-Building",
-  "techUsed": "Intel Dev Cloud | Android Studio(Java) | Firebase",
-  "description": "Garib caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
-  "imageUrl": "images/garib.jpg",
-  "tags": ["G.A.R.I.B-General-Application-for-Rural-Income-Building", "Firebase", "Android App", "Android Studio(java)", "Intel"],
-  "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
-  "category": "Android Development"
-}
-,
-{
-  "date": "October 2023",
-  "title": "Real Time Sentiment Analysis using ML",
-  "techUsed": "Machine Learning Classifier | Preprocessing | Python | Flask ",
-  "description": "Twitter Sentiment Analysis after preprocess tweets using SVC and RFC using Flask model intreprets and do Real time analysis.",
-  "imageUrl": "images/sentiment_analysis.jpg",
-  "tags": ["Machine Learning", "Sentiment Analysis", "Python", "Real Time", "Sentiment140 Dataset"],
-  "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home",
-  "category": "Machine Learning"
-}
-,
-{
-  "date": "November 2023",
-  "title": "Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
-  "techUsed": "YOLOv8| LabelImg/Roboflow | OpenCv | Python(Modular Programming) ",
-  "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration.",
-  "imageUrl": "images/marine_detector_identifier.png",
-  "tags": ["YOLOv8", "Real-Time Underwater Imaging", "Python", "Real Time", "Opencv","Dataset Creation"],
-  "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
-"category": "Computer Vision"}
-,
-{
-  "date": "January 2024",
-  "title": "End to End Data Science Project Student Performance",
-  "techUsed": "ML Regression | PythonAnywhere | Python(OOPs) | Flask ",
-  "description": "A machine learning model designed to predict Maths scores based on various factors.This project structured in different pipeline and deployed on pythonanywhere web app.",
-  "imageUrl": "images/student_performance.png",
-  "tags": ["Machine Learning", "Student Performance Predictor", "Python", "End to end Ml project", "PythonAnywhere"],
-  "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project",
-  "category": "MLOPs"
-}
+[
+    {
+        "date": "September 2023",
+        "title": "Portfolio Website",
+        "techUsed": "HTML | CSS | JavaScript",
+        "description": "Designed and developed my personal portfolio website to showcase my skills, projects, and experiences in the field of technology.",
+        "imageUrl": "images/responsive portfolio.png",
+        "tags": [
+            "Web Development",
+            "Personal Portfolio",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Individual project"
+        ],
+        "link": "https://gauravkumarchaurasiya.github.io",
+        "category": "Web Development"
+    },
+    {
+        "date": "November 2023",
+        "title": "Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
+        "techUsed": "YOLOv8| LabelImg/Roboflow | OpenCv | Python(Modular Programming) ",
+        "description": "This project designed to detect,identify marine animals,plants and detect trash in aquatic surroundings. We utilized YOLOv8, a robust object detection technique, and harnessed the power of ONNX to facilitate model integration.",
+        "imageUrl": "images/marine_detector_identifier.png",
+        "tags": [
+            "YOLOv8",
+            "Real-Time Underwater Imaging",
+            "Python",
+            "Real Time",
+            "Opencv",
+            "Dataset Creation"
+        ],
+        "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
+        "category": "Computer Vision"
+    },
+    {
+        "date": "Dec 2020",
+        "title": "Store Management System",
+        "techUsed": "Python | MySql",
+        "description": "A CUI based Store management system with Mysql database connectivty provides authentication, having multiple roles(admin,manager) , saves customer details, having feature of note making and play quiz for fun.",
+        "imageUrl": "images/storemanagementsystem.jpg",
+        "tags": [
+            "Python",
+            "Store Managment System",
+            "Individual project"
+        ],
+        "link": "https://youtu.be/NBtVuVMTess?si=0or0oQr4um7TKCJs",
+        "category": "Web Development"
+    },
+    {
+        "date": "July 2023",
+        "title": "The Daily Quest Extension",
+        "techUsed": "HTML | CSS| JS | Github API",
+        "description": "'The Daily Quest' extension, a captivating browser extension that provides daily insights, interesting and joyful coding output questions, stimulating your curiosity and expanding your knowledge of programming.",
+        "imageUrl": "images/thedailyquestextension.jpg",
+        "tags": [
+            "Chrome Extension",
+            "Web Development",
+            "The Daily Quest",
+            "Individual project"
+        ],
+        "link": "https://github.com/gauravkumarchaurasiya/The-Daily-Quest",
+        "category": "Web Development"
+    },
+    {
+        "date": "September 2023",
+        "title": "G.A.R.I.B-General-Application-for-Rural-Income-Building",
+        "techUsed": "Intel Dev Cloud | Android Studio(Java) | Firebase",
+        "description": "Garib caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
+        "imageUrl": "images/garib.jpg",
+        "tags": [
+            "G.A.R.I.B-General-Application-for-Rural-Income-Building",
+            "Firebase",
+            "Android App",
+            "Android Studio(java)",
+            "Intel"
+        ],
+        "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
+        "category": "Android Development"
+    },
+    {
+        "date": "January 2024",
+        "title": "End to End Data Science Project Student Performance",
+        "techUsed": "ML Regression | PythonAnywhere | Python(OOPs) | Flask ",
+        "description": "A machine learning model designed to predict Maths scores based on various factors.This project structured in different pipeline and deployed on pythonanywhere web app.",
+        "imageUrl": "images/student_performance.png",
+        "tags": [
+            "Machine Learning",
+            "Student Performance Predictor",
+            "Python",
+            "End to end Ml project",
+            "PythonAnywhere"
+        ],
+        "link": "https://github.com/gauravkumarchaurasiya/End-to-End-Ml_Project",
+        "category": "MLOPs"
+    },
+    {
+        "date": "June 2023",
+        "title": "PAMAP2 Activity Classification",
+        "techUsed": "Machine Learning Classifier | Preprocessing | Python",
+        "description": "This project presents a comprehensive comparative analysis of various machine learning models for activity recognition using the PAMAP2 dataset. The primary objective is to evaluate and compare the performance of different machine learning classifiers in accurately classifying human activities based on sensor data.",
+        "imageUrl": "images/pamap2.png",
+        "tags": [
+            "Machine Learning",
+            "Data Analysis",
+            "Python",
+            "Activity Recognition",
+            "PAMAP2 Dataset"
+        ],
+        "link": "https://sites.google.com/view/pamap2activityclassification/home",
+        "category": "Machine Learning"
+    },
+    {
+        "date": "April 2023",
+        "title": "Formify:OCR Form Reader and Validator",
+        "techUsed": "PHP | Optical Character Recognition (OCR) | API Integration",
+        "description": "Formify leverages the power of Optical Character Recognition (OCR) technology to automate data extraction from paper-based forms and match details from the form using OCR and external API integration.",
+        "imageUrl": "images/formify.png",
+        "tags": [
+            "PHP",
+            "OCR",
+            "API",
+            "Data Extraction",
+            "Automation",
+            "Team Project"
+        ],
+        "link": "https://github.com/gauravkumarchaurasiya/formify",
+        "category": "Computer Vision"
+    },
+    {
+        "date": "October 2023",
+        "title": "Real Time Sentiment Analysis using ML",
+        "techUsed": "Machine Learning Classifier | Preprocessing | Python | Flask ",
+        "description": "Twitter Sentiment Analysis after preprocess tweets using SVC and RFC using Flask model intreprets and do Real time analysis.",
+        "imageUrl": "images/sentiment_analysis.jpg",
+        "tags": [
+            "Machine Learning",
+            "Sentiment Analysis",
+            "Python",
+            "Real Time",
+            "Sentiment140 Dataset"
+        ],
+        "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home",
+        "category": "Machine Learning"
+    },
+    {
+        "title": "BPE Tokenizer (Byte Pair Encoding)",
+        "date": "March 2025",
+        "techUsed": "Python | Streamlit | Byte Pair Encoding",
+        "description": "A Streamlit-powered BPE Tokenizer trained on Wikipedia articles. Encode and decode text efficiently using Byte Pair Encoding (BPE).",
+        "imageUrl": "images/bpe_tokenizer.png",
+        "tags": [
+            "Byte Pair Encoding",
+            "NLP",
+            "Tokenizer",
+            "python",
+            "streamlit"
+        ],
+        "link": "https://bpe-tokenizer.streamlit.app",
+        "category": "Natural Language Processing"
+    },
+    {
+        "title": "AI-Powered Expense Tracker & Budget Advisor",
+        "date": "February 2025",
+        "techUsed": "Python | FastAPI | MongoDB ",
+        "description": "The AI-Powered Expense Tracker is a web-based financial management system designed to help users monitor and optimize their daily and monthly expenses. ",
+        "imageUrl": "images/Expense_Tracker_&_Advisor.png",
+        "tags": [
+            "Expense Tracker and Advisor",
+            "MongoDB",
+            "FastAPI",
+            "Python",
+            "Individual Project",
+            "Finance"
+        ],
+        "link": "https://expense-tracking-and-budgeting-by-gkc.onrender.com/",
+        "category": "Financial AI"
+    },
+    {
+        "title": "Stock AI Trader",
+        "date": "November 2024",
+        "techUsed": "Python | Streamlit | Plotly ",
+        "description": "An AI-based modular backtesting platform for retail investors, traders, and researchers. It allows users to simulate strategies over historical data with real-time performance tracking.",
+        "imageUrl": "images/stock_ai_trader.png",
+        "tags": [
+            "Finance AI",
+            "Backtesting",
+            "Trading Strategy",
+            "Individual Project",
+            "Python",
+            "Streamlit",
+            "Minor Project"
+        ],
+        "link": " https://stock-ai-trader-by-gkc.streamlit.app/",
+        "category": "Financial AI"
+    },
+    {
+        "title": "Real-Time Facial Feature Detection using YOLO-NAS",
+        "date": "July 2024",
+        "techUsed": "YOLO-NAS | Roboflow | FastAPI | Tailwind CSS | JavaScript | Roboflow Anotator",
+        "description": "A real-time facial feature detection system powered by YOLO-NAS and deployed via FastAPI. It detects facial components like eyes, nose, mouth, ears, eyebrows, and hair using webcam input and displays live results with bounding boxes.",
+        "imageUrl": "images/facial_features_output.png",
+        "tags": [
+            "YOLO-NAS",
+            "Facial Feature Detection",
+            "Computer Vision",
+            "Roboflow"
+        ],
+        "link": "https://facial-features-detection.onrender.com",
+        "category": "Computer Vision"
+    },
+    {
+        "title": "Automated Image Captioning",
+        "date": "August 2024",
+        "techUsed": "Python | TensorFlow | VGG-16 | Bahdanau Attention | Streamlit",
+        "description": "An automated image captioning system using deep learning, combining VGG16 for feature extraction, Bahdanau Attention, and LSTM for caption generation. Users can upload an image and receive a contextually relevant caption through a Streamlit web interface.",
+        "imageUrl": "images/aic.png",
+        "tags": [
+            "Automated Image Captioning",
+            "Deep Learning",
+            "Bahdanau Attention",
+            "LSTM",
+            "streamlit",
+            "Grouped Project",
+            ""
+        ],
+        "link": "https://automated-image-captioning.streamlit.app/",
+        "category": "Deep Learning"
+    }
+
 ,{
   "date": "September 2025",
   "title": "CreativeNexusAI — AI-Powered Content Creation Studio",

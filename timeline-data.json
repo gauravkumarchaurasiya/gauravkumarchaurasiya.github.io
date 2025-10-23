@@ -1,64 +1,101 @@
 [
     {
-        "date": "16 September, 2023",
-        "tag":"Portfolio",
-        "color": "#0048BA",
-        "description": "Created and Hosted fully Functional Portfolio Site",
-        "link":"https://gauravkumarchaurasiya.github.io",
-        "buttonContent":"Check it Out"
+        "date": "15 October, 2023",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "A Real Time sentiment Analysis Project using Machine Learning.",
+        "link": "https://sites.google.com/view/sentiment-analysis-using-ml/home",
+        "buttonContent": "Check it out"
     },
     {
-        "date": "17 September, 2023",
-        "tag":"Projects",
+        "date": "1 November, 2023",
+        "tag": "Internship",
+        "color": "#3c891e",
+        "description": "A Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
+        "link": "https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
+        "buttonContent": "Check it out"
+    },
+    {
+        "date": "16 January, 2024",
+        "tag": "Projects",
         "color": "#00e7fe",
-        "description": "Checkouts my Previous Projects",
-        "link":"https://gauravkumarchaurasiya.github.io/projects.html",
-        "buttonContent":"Check it out"
+        "description": "A End to End ML Project to predict Student Performance end to deployed on PythonAnywhere.",
+        "link": "http://gauravkumarchaurasiya.pythonanywhere.com/",
+        "buttonContent": "Check it out"
+    },
+    {
+        "date": "16 September, 2023",
+        "tag": "Portfolio",
+        "color": "#0048BA",
+        "description": "Created and Hosted fully Functional Portfolio Site",
+        "link": "https://gauravkumarchaurasiya.github.io",
+        "buttonContent": "Check it Out"
     },
     {
         "date": "30 September, 2023",
-        "tag":"Projects",
+        "tag": "Projects",
         "color": "#00e7fe",
         "description": "G.A.R.I.B. caters to different marginalised communities and individuals, helping them overcome their state of absolute poverty.",
-        "link":"https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
-        "buttonContent":"Check it out"
-    }
-    ,
-    {
-        "date": "15 October, 2023",
-        "tag":"Projects",
-        "color": "#00e7fe",
-        "description": "A Real Time sentiment Analysis Project using Machine Learning.",
-        "link":"https://sites.google.com/view/sentiment-analysis-using-ml/home",
-        "buttonContent":"Check it out"
-    }
-    ,
-    {
-        "date": "1 November, 2023",
-        "tag":"Internship",
-        "color": "#3c891e",
-        "description": "A Real-Time Underwater Imaging for Sea Animal and Trash Detection using YOLOv8",
-        "link":"https://github.com/gauravkumarchaurasiya/Real-Time-Underwater-Imaging-for-Sea-Animal-and-Trash-Detection-using-YOLOv8-",
-        "buttonContent":"Check it out"
-    }
-    ,
+        "link": "https://github.com/gauravkumarchaurasiya/G.A.R.I.B-General-Application-for-Rural-Income-Building/tree/main",
+        "buttonContent": "Check it out"
+    },
     {
         "date": "1 December, 2023",
-        "tag":"Volunteer",
+        "tag": "Volunteer",
         "color": "#e53cff",
         "description": "Reflecting on 2.5 Years of Impactful Volunteer Journey and glimpse in College",
-        "link":"https://drive.google.com/file/d/149lHDfxBm_rssGH3UlrqB1t3tymXUaJL/view?usp=sharing",
-        "buttonContent":"Check it out"
-    }
-    ,
-    {
-        "date": "16 January, 2024",
-        "tag":"Projects",
-        "color": "#00e7fe",
-        "description": "A End to End ML Project to predict Student Performance end to deployed on PythonAnywhere.",
-        "link":"http://gauravkumarchaurasiya.pythonanywhere.com/",
-        "buttonContent":"Check it out"
+        "link": "https://drive.google.com/file/d/149lHDfxBm_rssGH3UlrqB1t3tymXUaJL/view?usp=sharing",
+        "buttonContent": "Check it out"
     },
+    {
+        "date": "17 September, 2023",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "Checkouts my Previous Projects",
+        "link": "https://gauravkumarchaurasiya.github.io/projects.html",
+        "buttonContent": "Check it out"
+    },
+    {
+        "date": "3 March, 2025",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "A Streamlit-powered BPE Tokenizer trained on Wikipedia articles for efficient text encoding and decoding using Byte Pair Encoding (BPE).",
+        "link": "https://bpe-tokenizer.streamlit.app",
+        "buttonContent": "Check it out"
+    },
+    {
+        "date": "29 March, 2025",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "Launched a full-stack AI-Powered Expense Tracker & Budget Advisor web application with expense management, budgeting tools, dynamic chart visualizations, and personalized AI insights for financial well-being.",
+        "link": "https://expense-tracking-and-budgeting-by-gkc.onrender.com/",
+        "buttonContent": "Visit Project"
+    },
+    {
+        "date": "10 November, 2024",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "Launched an AI-based modular backtesting platform for retail investors, traders, and researchers. It allows users to simulate strategies over historical data with real-time performance tracking.",
+        "link": "https://stock-ai-trader-by-gkc.streamlit.app/",
+        "buttonContent": "Visit Project"
+    },
+    {
+        "date": "30 July, 2024",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "A real-time facial feature detection system using YOLO-NAS and webcam input. Detects eyes, nose, mouth, ears, eyebrows, and hair with a clean UI powered by FastAPI and Tailwind CSS.",
+        "link": "https://facial-features-detection.onrender.com",
+        "buttonContent": "Try It Out"
+    },
+    {
+        "date": "4 August, 2024",
+        "tag": "Projects",
+        "color": "#00e7fe",
+        "description": "An automated image captioning system using VGG16, attention mechanism, and LSTM, deployed with Streamlit. Upload an image and generate captions based on the Flickr8k dataset.",
+        "link": "https://automated-image-captioning.streamlit.app/",
+        "buttonContent": "Try It Out"
+    }
+,
     {
     "date": "20 September, 2025",
     "tag": "Projects",
