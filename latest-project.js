@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("projects.json")
     .then((response) => response.json())
     .then((data) => {
-      const sortedProjects = data.sort((a, b) => new Date(b.date) - new Date(a.date));
+      // Sort projects by date (latest first)
+      const sortedProjects = data.sort((a, b) => {
+        // Convert month-year strings to Date objects (assume first of the month)
+        const dateA = new Date(a.date + " 1");
+        const dateB = new Date(b.date + " 1");
+        return dateB - dateA; // latest first
+      });
       const latestProjects = sortedProjects.slice(0, 3);
 
       recentProjectsContainer.innerHTML = "";

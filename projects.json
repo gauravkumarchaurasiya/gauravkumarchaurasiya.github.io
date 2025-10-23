@@ -34,7 +34,7 @@
         "category": "Computer Vision"
     },
     {
-        "date": "Dec 2020",
+        "date": "December 2020",
         "title": "Store Management System",
         "techUsed": "Python | MySql",
         "description": "A CUI based Store management system with Mysql database connectivty provides authentication, having multiple roles(admin,manager) , saves customer details, having feature of note making and play quiz for fun.",
